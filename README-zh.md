@@ -7,7 +7,8 @@
 将仓库克隆到[本地文件夹](https://github.com/typst/packages?tab=readme-ov-file#local-packages)．以 Linux 为例：
 
 ```sh
-git clone "https://github.com/yuanlx27/sysu-templates" "$XDG_DATA_HOME/typst/packages/local"
+target="${XDG_DATA_HOME:-$HOME/.local/share}/typst/packages/local"
+mkdir -p "$target" && git clone "https://github.com/yuanlx27/sysu-templates" "$target/sysu-templates"
 ```
 
 之后便可以在代码中调用此包．以实验报告为例：
