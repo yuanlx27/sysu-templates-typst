@@ -22,6 +22,8 @@
     }
   })
 
+  set par(justify: true)
+
   set text(
     font: (
       (name: "Libertinus Serif", covers: "latin-in-cjk"),
@@ -30,6 +32,10 @@
     lang: "zh",
     size: 12pt,
   )
+
+  show raw: set text(font: "Maple Mono NFMono")
+  show raw.where(block: true): it => block(fill: luma(90%), inset: 1em, radius: 0.2em, width: 100%, it)
+  show raw.where(block: false): it => box(fill: luma(90%), inset: (x: 0.2em), outset: (y: 0.2em), radius: 0.2em, it)
 
   page({
     set align(center)
