@@ -8,7 +8,7 @@
 
 ```sh
 target="${XDG_DATA_HOME:-$HOME/.local/share}/typst/packages/local"
-mkdir -p "$target" && git clone "https://github.com/yuanlx27/sysu-templates" "$target/sysu-templates"
+git clone "https://github.com/yuanlx27/sysu-templates-typst" "$target/sysu-templates"
 ```
 
 之后便可以在代码中调用此包．以实验报告为例：
