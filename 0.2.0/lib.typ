@@ -15,6 +15,9 @@
 
   show link: set text(fill: blue)
 
+  show raw.where(block: true): it => block(fill: luma(90%), inset: 1em, radius: 0.2em, width: 100%, it)
+  show raw.where(block: false): it => box(fill: luma(90%), inset: (x: 0.2em), outset: (y: 0.2em), radius: 0.2em, it)
+
   page({
     set align(center)
 
